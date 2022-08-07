@@ -19,10 +19,10 @@ from traceback import print_exc
 
 from dotenv import load_dotenv
 
-from . import database
-from . import crud
-from . import datamodel
-from .datamodel import (
+import database
+import crud
+import datamodel
+from datamodel import (
     KlineZipFile,
     KlineRecord,
     TimeFrame,
@@ -112,6 +112,7 @@ def main(dirpath: Path, max_jobs: int):
             sess.commit()
         except:
             sess.rollback()
+            return
 
     with database.get_session() as sess:
         pairs = crud.MarketPair.read_all(sess)

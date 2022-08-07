@@ -18,7 +18,7 @@ from sqlalchemy import (
     SMALLINT,
 )
 
-from .database import get_engine, get_session
+from database import get_engine, get_session
 
 
 logging.basicConfig(level=logging.INFO)

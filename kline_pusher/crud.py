@@ -2,7 +2,7 @@ from sqlalchemy import select, insert, join, delete, update
 from sqlalchemy.engine import Connection
 from sqlalchemy.orm import Session
 
-from .datamodel import KlineRecord, Pair, Table
+from datamodel import KlineRecord, Pair, Table
 
 
 class MarketPair:
