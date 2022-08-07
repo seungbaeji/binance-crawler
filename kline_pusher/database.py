@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Iterable
 from contextlib import contextmanager
 
-from attr import define, field, astuple, asdict
+from attrs import define, field, astuple, asdict
 from sqlalchemy.engine import Engine, create_engine as _create_engine
 from sqlalchemy.engine.url import URL
 from sqlalchemy.orm import Session
