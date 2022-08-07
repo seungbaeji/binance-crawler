@@ -1,0 +1,6 @@
+aiofiles
+PyMySQL
+aiomysql
+sqlalchemy[asyncio]
+attrs
+python-dotenv

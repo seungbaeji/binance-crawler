@@ -1,0 +1,4 @@
+-r ./link_crawler/requirements.txt
+-r ./downloader/requirements.txt
+-r ./validator/requirements.txt
+-r ./kline_pusher/requirements.txt
